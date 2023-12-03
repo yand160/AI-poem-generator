@@ -1,5 +1,5 @@
 body {
-background-color: rgb(127, 164, 215);
+background-color:rgb(184, 178, 162);
 font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -25,9 +25,9 @@ h1 {
 }
 
 .form-container {
-    padding: 30px;
+    padding: 15px 20px;
     background-color: grey;
-    box-shadow: 0px 20px rgb(64, 132, 64);
+    box-shadow: 0px 20px 60px rgb(5, 93, 5);
     border-radius: 10px;
     margin-bottom: 30px;
 }
@@ -40,13 +40,14 @@ form {
     line-height: 1.5;
     margin-top: 10px;
     font-size: 12px;
+    opacity: 0.6;
 }
 
 .instructions {
     padding: 16px;
     border: 1px solid rgb(10, 11, 11);
     width: 80px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 50px;
     line-height: 20px;
     color: darkred;
@@ -69,13 +70,34 @@ form {
     background-color: whitesmoke;
     line-height: 2;
     border-left: 3px solid rgb(64, 132, 64);
-    box-shadow: 0px 4px 30px 0px rgb(4, 45, 103);
+    box-shadow: 0px 4px 30px 0px rgb(110, 12, 12);
+}
+
+.poem strong {
+    color: darkred;
+}
+.hidden {
+    display: none;
 }
 
 
 .footer {
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     margin-top: 30px;
 
 }
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
